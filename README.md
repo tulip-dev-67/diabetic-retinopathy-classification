@@ -1,7 +1,7 @@
 # Diabetic Retinopathy Classification using Machine Learning
 **SIH26038 · First machine learning project**
 
-This repo documents every step took, including the things that confused me, so other beginners can follow along. The model classifies retinal images into 5 severity levels of diabetic retinopathy (DR).
+This repo documents every step took, including the things that confused me, so other beginners can follow along. The model classifies retinal images into 5 severity levels of diabetic retinopathy.
 
 
 ## Results at a glance
