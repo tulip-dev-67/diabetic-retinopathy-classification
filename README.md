@@ -155,11 +155,7 @@ A `.gitignore` file keeps large or private things out of the repo: the virtual e
 | Screenshots didn't show in the README | Windows added a second `.png` to the filenames | Renamed the files with `mv` |
 | README was empty on GitHub | It wasn't saved before the commit | Saved with Ctrl+S, then committed and pushed again |
 
-[Add your own mistakes and "aha" moments here.]
 
-## What we learned
-
-- [3-4 bullets in your own words.]
 
 ## Limitations and next steps
 
