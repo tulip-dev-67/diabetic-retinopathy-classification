@@ -132,30 +132,6 @@ Final per-class results on the test set (733 images):
 
 ![Final confusion matrix](figures/confusion_matrix.png)
 
-## Step 7: Publishing on GitHub
-
-**What and why:** GitHub stores the project online so others can see it. We first worked locally, then pushed. The cycle below is how every change gets published:
-
-```bash
-git add .
-git commit -m "describe the change"
-git push
-```
-
-A `.gitignore` file keeps large or private things out of the repo: the virtual environment, the dataset and the saved features.
-
-## Things that went wrong (and how we fixed them)
-
-| Problem | Cause | Fix |
-|---|---|---|
-| `pip: command not found` | The virtual environment wasn't active in the new terminal | `source venv/Scripts/activate` |
-| Kaggle gave a token string, not `kaggle.json` | Kaggle changed its key format | Saved it as the `KAGGLE_API_TOKEN` environment variable |
-| `python explore.py` ran but printed nothing | The file wasn't saved, so it was empty on disk | Press Ctrl+S, then check with `wc -l explore.py` |
-| 79% accuracy looked fine, but rare classes were missed | Class imbalance | Balanced class weights, and judging by macro F1 |
-| Screenshots didn't show in the README | Windows added a second `.png` to the filenames | Renamed the files with `mv` |
-| README was empty on GitHub | It wasn't saved before the commit | Saved with Ctrl+S, then committed and pushed again |
-
-
 
 ## Limitations and next steps
 
